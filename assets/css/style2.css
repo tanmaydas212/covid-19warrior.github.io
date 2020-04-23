@@ -1,0 +1,62 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Spicy Rice', cursive;
+}
+body
+{
+height: 100vh;
+}
+
+.main_content
+{
+	 position: fixed;
+     background: #22c1c3;
+     padding:20px 20px 40px 20px;
+     -webkit-box-shadow: 10px 10px 64px 10px rgba(0,0,0,0.75);
+     -moz-box-shadow: 10px 10px 64px 10px rgba(0,0,0,0.75);
+     box-shadow: 10px 10px 64px 10px rgba(0,0,0,0.75); 
+     border:2px ;
+}
+
+
+.sky-neon {
+
+    color: #1c5169;
+    background-color: #fd1de2;
+    -webkit-transition: .3s all ease-in;
+    transition: .3s all ease-in;
+    
+
+}
+.sky-neon:hover, .sky-neon:focus {
+    -webkit-box-shadow: 0px 0px 20px 15px #3cc6d8;
+    box-shadow: -18px 3px 64px -19px rgba(0,0,0,0.75);
+    background-color: #d7f3ff;
+    color: red;
+    border: 2px solid red;
+}
+.text {
+    padding-bottom: 4px;
+       transform: translate(50%,-50%);
+       text-transform: uppercase;
+       font-family: verdana;
+       font-size: 12em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}

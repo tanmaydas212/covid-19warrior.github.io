@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!----------------css link---------------->
+    <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+     <title>Covid-19 Warrior </title>
+     <link rel="icon" type="image/ico" href="assets/img/corona_virus.png" />
+
+     <!-----------aos library cdn---------->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-----------aos library cdn ends---------->
+    <style type="text/css">
+       #first,#second,#third,#fourth,#fifth,#sixth,#seventh, #eighth,#nineth,#tenth,#eleventh1,#result,#progress,#errorMsg,#errorMsg1,#errorMsg2,#errorMsg3,#errorMsg4,#errorMsg5,#errorMsg6,#errorMsg7,#errorMsg8,#output
+       {
+        display: none;
+       }
+       .corona_img
+      {
+        animation: rotation 2s infinite linear;
+      }
+      @keyframes rotation 
+      {
+         from {
+                transform: rotate(0deg);
+              }
+         to {
+                transform: rotate(359deg);
+            }
+      }
+
+     </style>
+
+  </head>
+  <body style="background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);">
+
+    <div class="container" >
+       <div class="row justify-content-center ">
+         <div class="col-md-10 p-4 rounded mt-5 main_content">
+             <h5 class="text-center text-light bg-info mb-2 rounded btn-lg" id="result"></h5>
+<!------------=====================progress bar start===================------------->
+             <div class="progress mb-3" style="height: 25px;" id="progress">
+             <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" id="progressBar">
+               <b class="lead" id="progressText"></b>
+             </div>
+           </div>
+<!-----------==========================-progress bar end=====================------------>
+
+             <form action="" method="POST" accept-charset="utf-8" id="form-data" class="mt-2" >
+
+<!--------============================frront OF WARRIOR  start======================------------->
+
+
+              <div id="front" style="border:2px dotted #fd1de2; padding: 10px">
+                  <!--  <div class="content"> -->
+                   <h1 class="text-center rounded font-weight-bold text" style="font-size: 2.7rem; font-weight: bold;" data-aos="zoom-in" >Welcome to Covid-19 Warrior</h1>
+                    <div class="text-center ">
+                       <img src="assets/css/corona_virus.png" height="130px" width="130px" alt="" class="corona_img">
+                       <img src="assets/img/tharmal_scanning.png" height="130px" width="130px" alt="">
+                    </div>
+
+                    <h2 class="text-center text-danger" data-aos="zoom-in">Are you ready to combat ?</h2>
+                    <div class=" text-center" data-aos="zoom-in">
+                          <a class="btn btn-lg p-2 sky-neon" href="#" id="start" >
+                             
+                              Yes, I'm a ready
+
+                          </a>
+                    </div>
+
+                    <hr>
+                    <div class="footer ">
+                       <p style="font-size: 0.9rem ; color: white; text-decoration: underline;text-align: center;"> Disclaimer</p>
+                       <!-- <p style="font-size: 0.7rem ; text-align: justify; color:gray">What is COVID-19 Warrior? </p> -->
+                       <p style="font-size: 0.6rem ;">Covid-19 Warrior is fun way to create awaremess among common people. All questions are sourced from Internet. If you want genuine information please visit <a href="https://www.who.int/">WHO </a> and Govt websites. And in this critical situation please stay at home and do'nt create panic. Thanks you. </p>
+                       <p style="font-size: 0.7rem ; color: white; text-align: center;"> Covid-19 Warrior is designed and developed with &hearts; by <a href="https://www.facebook.com/tanmaydas212"> Tanmay Das </a> .</p>
+                    </div>
+       
+                </div>
+<!--------============================front INFO OF WARRIOR  ENDS======================------------->              
+
+
+<!--------============================cONTACT INFO OF WARRIOR  start======================------------->
+
+
+                <div id="first" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                  <h4 class="text-center bg-warning p-1 rounded text-light" data-aos="zoom-in">Covid-19 Warrior</h4>
+
+                     <div class="form-group" data-aos="zoom-in">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" value="" class="form-control" placeholder="Full Name of the warrior" id="name">
+                        <b class="form-text text-danger" id="nameError"></b>
+
+                     </div>
+
+                     <div class="form-group p-1" data-aos="zoom-in">
+                        <label for="name">Address</label>
+                        <input type="text" name="address" value="" class="form-control" placeholder="Warrior ! Where are you from ?" id="address">
+                        <b class="form-text text-danger" id="addressError"></b>
+                     </div>
+
+                     <div class="form-group p-1">
+                        <a href="index.html" class="btn sky-neon float-left" >Back to Home</a>
+                        <a href="#" class="btn sky-neon float-right" id="next-1">Start LEVEL 1</a>
+                     </div>
+                </div>
+<!--------============================cONTACT INFO OF WARRIOR  ENDS======================------------->
+                
+
+
+
+<!------=============================--Level-ONE  start=================================------>
+      
+
+      <div id="second" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+          <h4 class="text-center bg-success p-1 rounded text-light" data-aos="zoom-in">LEVEL- ONE</h4>
+              <div class="form-group justify-content-center">
+                        
+                      <label for="q1" style="font-size: 1.8rem;">How often  you should wash your hand to eradicate the pandemic Covid-19 ?</label>&nbsp;<br><br>
+                      
+                      <div class="text-center" data-aos="zoom-in">
+                      <div id="errorMsg">
+                          <b class=" text-danger alert alert-danger" id="q1Error"></b>
+                      </div>
+                     </div>
+                      <br>
+                      
+                    <div style="font-size: 1.3rem;" data-aos="zoom-in">
+                       <input type="radio" name="q1" value="1" class="custom-radio" required="" autocomplete="off" id="q1a1">&nbsp; One time a day 
+                       <br>
+                       <input type="radio" name="q1" value="2" class="custom-radio" required="" id="q1a2">&nbsp; Two times a day 
+                       <br>
+                       <input type="radio" name="q1" value="3" class="custom-radio" required="" id="q1a3">&nbsp; Multiple times a day 
+                    </div>
+                  </div>
+                      
+                  
+                       
+              <br>
+                      <div class="form-group">
+                        <a href="#" class="btn sky-neon float-left" id="prev-2">Previous</a>
+                        <a href="#" class="btn sky-neon float-right" id="next-2">GO TO LEVEL 2</a>
+                        <!-- <a href="#" class="btn sky-neon float-right" id="next-2">Save & Next</a> -->
+                     </div>
+    </div>
+               
+
+  <!--------===========================Level-ONE part  end-===================----------->
+
+               
+  <!------=============================--Level-TWO  start=================================------>
+               <div id="third" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                  <h4 class="text-center bg-success p-1 rounded text-light" data-aos="zoom-in">LEVEL- TWO</h4>
+                      <div class="form-group">
+                        <label for="q2" style="font-size: 1.8rem;">Which body part you should not touch to avoid Corona virus Contamination?</label>
+                         <br><br>
+                          <div class="text-center" data-aos="zoom-in">
+                           <div id="errorMsg1">
+                               <b class=" text-danger alert alert-danger" id="q2Error"></b>
+                           </div>
+                           </div>
+                         <br>
+                    <div style="font-size: 1.3rem;" data-aos="zoom-in">     
+                       <input type="radio" name="q2" value="1" class="custom-radio" required="" autocomplete="off" id="">&nbsp; HAIR & CHEST 
+
+                       <br>
+
+                       <input type="radio" name="q2" value="2" class="custom-radio" required="" id="">&nbsp; 
+                       EYE , NOSE & MOUTH 
+
+                       <br>
+
+                       <input type="radio" name="q2" value="3" class="custom-radio" required="" id="">&nbsp; 
+                       HEAD & LEGS
+                    </div>
+                     </div>
+                      
+                     
+
+                     <div class="form-group">
+                        <a href="#" class="btn sky-neon float-left" id="prev-3">Previous</a>
+                        <a href="#" class="btn sky-neon float-right" id="next-3">GO TO LEVEL 3</a>
+                     </div>
+               </div>
+<!------=============================--Level-TWO  ends=================================------>
+
+
+
+<!------=============================--Level-THREE  start=================================------>
+               <div id="fourth" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                  <h4 class="text-center bg-success p-1 rounded text-light" data-aos="zoom-in">LEVEL- THREE</h4>
+                      <div class="form-group">
+                        <label for="q3" style="font-size: 1.8rem;">What is the minimum distance people should maintain to stop corona virus contamination ?</label>
+                         <br>
+                         <div class="text-center" data-aos="zoom-in">
+                            <div id="errorMsg2">
+                               <b class=" text-danger alert alert-danger" id="q3Error"></b>
+                            </div>
+                        </div>
+                         <br>
+                  <div style="font-size: 1.3rem;"data-aos="zoom-in">       
+                       <input type="radio" name="q3" value="1" class="custom-radio" required="" autocomplete="off" id="q1">&nbsp; 1000 meter
+
+                       <br>
+
+                       <input type="radio" name="q3" value="2" class="custom-radio" required="" id="q1a2">&nbsp; 
+                       10 meter 
+
+                       <br>
+
+                       <input type="radio" name="q3" value="3" class="custom-radio" required="" id="q1a3">&nbsp; 
+                       1-2  meter
+                  </div>      
+
+                     </div>
+                      
+                     
+
+                     <div class="form-group">
+                        <a href="#" class="btn sky-neon float-left" id="prev-4">Previous</a>
+                        <a href="#" class="btn sky-neon float-right" id="next-4">GO TO LEVEL 4</a>
+                     </div>
+               </div>
+<!------=============================--Level-THREE  ends=================================------>
+
+
+<!------=============================--Level-FOURTH  start=================================------>
+               <div id="fifth" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500" >
+                  <h4 class="text-center bg-success p-1 rounded text-light" data-aos="zoom-in">LEVEL- FOUR</h4>
+                      <div class="form-group">
+                        <label for="q4" style="font-size: 1.8rem;" data-aos="zoom-in">When you should consult to a doctor ?</label>
+                         <br>
+                          <div class="text-center">
+                            <div id="errorMsg3">
+                               <b class=" text-danger alert alert-danger" id="q4Error"></b>
+                            </div>
+                          </div>
+                         <br>
+                    <div style="font-size: 1.3rem;" data-aos="zoom-in">     
+                       <input type="radio" name="q4" value="1" class="custom-radio" required="" autocomplete="off" id="q1">&nbsp; Before developing fever .
+
+                       <br>
+
+                       <input type="radio" name="q4" value="2" class="custom-radio" required="" id="q1a2">&nbsp; 
+                       After developing fever .
+
+                    </div>    
+
+                     </div>
+                      
+                     
+
+                     <div class="form-group">
+                        <a href="#" class="btn sky-neon float-left" id="prev-5">Previous</a>
+                        <a href="#" class="btn sky-neon float-right" id="next-5">GO TO LEVEL 5</a>
+                     </div>
+               </div>
+<!------=============================--Level-FOURTH  ends=================================------>
+
+
+
+<!------=============================--Level-FIFTH  start=================================------>
+               <div id="sixth" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                  <h4 class="text-center bg-success p-1 rounded text-light" data-aos="zoom-in">LEVEL- FIVE</h4>
+                      <div class="form-group" >
+                        <label for="q5" style="font-size: 1.8rem;">Whom you will suggest to consult a doctor ?</label>
+                         <br>
+                          <div class="text-center">
+                            <div id="errorMsg4">
+                               <b class=" text-danger alert alert-danger" id="q5Error"></b>
+                            </div>
+                          </div>
+                         <br>
+                    <div style="font-size: 1.3rem;">     
+                       <input type="radio" name="q5" value="1" class="custom-radio" required="" autocomplete="off" id="">&nbsp; A person who is coming from a severely effected country.
+
+                       <br>
+
+                       <input type="radio" name="q5" value="2" class="custom-radio" required="" id="">&nbsp; 
+                      A person who is living in a non-effected area for a long time.
+
+                    </div>    
+
+                     </div>
+                      
+                     
+
+                     <div class="form-group">
+                        <a href="#" class="btn sky-neon float-left" id="prev-6">Previous</a>
+                        <a href="#" class="btn sky-neon float-right" id="next-6">GO TO LEVEL 6</a>
+                     </div>
+               </div>
+<!------=============================--Level-FIFTH ends=================================------>
+
+
+<!------=============================--Level-SIXTH  start=================================------>
+               <div id="seventh" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                  <h4 class="text-center bg-success p-1 rounded text-light" data-aos="zoom-in">LEVEL- SIX</h4>
+                      <div class="form-group">
+                        <label for="q6" style="font-size: 1.8rem;">What is the main responsibility of you to become a responsible citizen ?</label>
+                         <br>
+                          <div class="text-center">
+                            <div id="errorMsg5">
+                               <b class=" text-danger alert alert-danger" id="q6Error"></b>
+                            </div>
+                          </div>
+                         <br>
+                    <div style="font-size: 1.3rem;">     
+                       <input type="radio" name="q6" value="1" class="custom-radio" required="" autocomplete="off" id="q1">&nbsp; Making yourself isolated.
+
+                       <br>
+
+                       <input type="radio" name="q6" value="2" class="custom-radio" required="" id="q1a2">&nbsp; 
+                       wondering freely outside home.
+
+                    </div>    
+
+                     </div>
+                      
+                     
+
+                     <div class="form-group">
+                        <a href="#" class="btn sky-neon float-left" id="prev-7">Previous</a>
+                        <a href="#" class="btn sky-neon float-right" id="next-7">GO TO LEVEL 7</a>
+                     </div>
+               </div>
+<!------=============================--Level-SIXTH ends=================================------>
+
+
+<!------=============================--Level-Seventh  start=================================------>
+               <div id="eighth" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                  <h4 class="text-center bg-success p-1 rounded text-light" data-aos="zoom-in">LEVEL- SEVEN</h4>
+                      <div class="form-group">
+                        <label for="q7" style="font-size: 1.8rem;">What is the name of the place where Covid-19 first case was found?</label>
+                         <br>
+                          <div class="text-center">
+                            <div id="errorMsg6">
+                               <b class=" text-danger alert alert-danger" id="q7Error"></b>
+                            </div>
+                          </div>
+                         <br>
+                    <div style="font-size: 1.3rem;">     
+                       <input type="radio" name="q7" value="1" class="custom-radio" required="" autocomplete="off" id="q1">&nbsp; New York , USA
+
+                       <br>
+
+                       <input type="radio" name="q7" value="2" class="custom-radio" required="" id="q1a2">&nbsp; 
+                       New Delhi, India
+
+                       <br>
+
+                       <input type="radio" name="q7" value="3" class="custom-radio" required="" id="q1a2">&nbsp; 
+                       Wuhan, China
+
+                    </div>    
+
+                     </div>
+                      
+                     
+
+                     <div class="form-group">
+                        <a href="#" class="btn sky-neon float-left" id="prev-8">Previous</a>
+                        <a href="#" class="btn sky-neon float-right" id="next-8">GO TO LEVEL 8</a>
+                     </div>
+               </div>
+<!------=============================--Level-seventh ends=================================------>
+
+
+
+
+<!------=============================--Level-eighth  start=================================------>
+               <div id="nineth" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                  <h4 class="text-center bg-success p-1 rounded text-light" data-aos="zoom-in" >LEVEL- EIGHT </h4>
+                      <div class="form-group">
+                        <label for="q8" style="font-size: 1.8rem;">How the whole nation of India gave respect to the health, security and other personals who are working 24/7 in this critical situation ?</label>
+                         <br>
+                          <div class="text-center">
+                            <div id="errorMsg7">
+                               <b class=" text-danger alert alert-danger" id="q8Error"></b>
+                            </div>
+                          </div>
+                         <br>
+                    <div style="font-size: 1.3rem;">     
+                       <input type="radio" name="q8" value="1" class="custom-radio" required="" autocomplete="off" id="q1">&nbsp; By sending e-mails
+
+                       <br>
+
+                       <input type="radio" name="q8" value="2" class="custom-radio" required="" id="q1a2">&nbsp; 
+                       By clapping 
+
+                       <br>
+
+                       <input type="radio" name="q8" value="3" class="custom-radio" required="" id="q1a2">&nbsp; 
+                      By telephone
+
+                    </div>    
+
+                     </div>
+                      
+                     
+
+                     <div class="form-group">
+                        <a href="#" class="btn sky-neon float-left" id="prev-9">Previous</a>
+                        <a href="#" class="btn sky-neon float-right" id="next-9">GO TO LEVEL 9</a>
+                     </div>
+               </div>
+<!------=============================--Level-eighth ends=================================------>
+
+
+
+<!------=============================--Level-nineth  start=================================------>
+               <div id="tenth" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                  <h4 class="text-center bg-success p-1 rounded text-light" data-aos="zoom-in">LEVEL- NINE </h4>
+                      <div class="form-group">
+                        <label for="q9" style="font-size: 1.8rem;">Does mosquito bite cause Covid-19 ?</label>
+                         <br>
+                          <div class="text-center">
+                            <div id="errorMsg8">
+                               <b class=" text-danger alert alert-danger" id="q9Error"></b>
+                            </div>
+                          </div>
+                         <br>
+                    <div style="font-size: 1.3rem;">     
+                       <input type="radio" name="q9" value="1" class="custom-radio" required="" autocomplete="off" id="q1">&nbsp; Yes 
+
+                       <br>
+
+                       <input type="radio" name="q9" value="2" class="custom-radio" required="" id="q1a2">&nbsp; 
+                       As of now there is NO evidence.
+
+                       
+
+                     </div>
+                      
+                     
+
+                     <div class="form-group">
+                        <a href="#" class="btn sky-neon float-left" id="prev-10">Previous</a>
+                        <a href="congrats.html" class="btn sky-neon float-right" id="next-10">GO TO LEVEL 10</a>
+                     </div>
+               </div>
+<!------=============================--Level-nineth ends=================================------>
+
+
+
+
+
+
+
+             </form>
+         </div>
+       </div>
+
+    </div>
+
+
+
+
+
+    <!-------jQuery cdn-----------> 
+   <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!----------AOS initiate------------------>
+  <script>
+     AOS.init();
+  </script>
+<!----------AOS close------------------>
+ <!----jQuery code start -------->
+  <script  type="text/javascript">
+    
+$(document).ready(function()
+ 
+{
+//========================validation of first of the form=======================
+      $("#start").click(function()
+      {
+        $("#front").hide();
+        $("#first").show();
+      });
+//========================validation of contact info of the form=======================
+  
+
+   $("#next-1").click(function(e){
+     
+     e.preventDefault();//preventing the auto page refresh
+      $("#nameError").html('');
+      $("#addressError").html('');
+
+
+        if($("#name").val() == '')
+        {
+          $("#nameError").html("* Name can't be empty");
+            return false;
+        }
+        else if($("#name").val().length < 3)
+        {
+          $("#nameError").html("* Name must be of more than 3 Charecter.");
+          return false;
+        }
+        else if (!isNaN($("#name").val()))
+        {
+          $("#nameError").html("* Name can't be a number.");
+          return false;
+        }
+        else if($('#address').val()== '')
+
+          {
+            $("#addressError").html("* Address can't be empty");
+          return false;
+          }
+          else if ($("#address").val().length<4)
+          {
+           $("#addressError").html("* Address must be of more than 4 Charecters.");
+          return false; 
+          }
+        else 
+      {
+        $("#second").show();
+        $("#first").hide();
+        $("#progress").show();
+        $("#progressBar").css("width","10%");
+        $("#progressText").html("LEVEL 1");
+      }
+
+   });
+   //========================validation of level ONE of the form=======================
+$("#next-2").click(function()
+{
+     
+       var radioValue = $("input[name='q1']:checked").val();
+      if(radioValue == "3")
+                
+                {
+                    $("#third").show();
+                    $("#second").hide();
+                    $("#progress").show();
+                    $("#progressBar").css("width","20%");
+                    $("#progressText").html("LEVEL TWO (20%)");
+
+                 }
+            
+            else if(radioValue == "1")
+                 {   
+                     $("#errorMsg").show();
+                     $("#q1Error").html("* Please do more efforts");
+                     
+                 }
+            else if(radioValue == "2")
+                 {  
+                    $("#errorMsg").show();
+                    $("#q1Error").html("*  we appreciate your efforts but it's still not enough.");
+                     return false;
+                  }   
+            else 
+                 {  
+                    $("#errorMsg").show();
+                    $("#q1Error").html("* Please select an option");
+                     return false;
+                 }
+                 
+      });
+ 
+
+   
+
+//========================validation of level ONE of the form ends=======================
+
+
+
+ //========================validation of LEVEL TWO of the form sTARTS=======================
+$("#next-3").click(function(e)
+{    
+       var radioValue = $("input[name='q2']:checked").val();
+            if(radioValue == "2")
+                {   
+                    $("#fourth").show();
+                    $("#third").hide();
+                    $("#progress").show();
+                    $("#progressBar").css("width","30%");
+                    $("#progressText").html("LEVEL THREE (30%)");
+                 }
+            
+            else if(radioValue == "1")
+                 {  
+                    $("#errorMsg1").show();
+                    $("#q2Error").html("* Sorry! You not doing correct");
+                     return false;
+
+                 }
+            else if(radioValue == "3")
+                 {  
+                    $("#errorMsg1").show();
+                    $("#q2Error").html("*  we appreciate your efforts but it's still not correct");
+                     return false;
+                  }   
+            else 
+                 {  
+                    $("#errorMsg1").show();
+                    $("#q2Error").html("* Please select an option.");
+                     return false;
+                 }
+                 
+      });
+ //========================validation of LEVEL TWO of the form ENDS=======================
+
+
+
+
+ //========================validation of LEVEL THREE of the form sTARTS=======================
+$("#next-4").click(function(e)
+{   
+       var radioValue = $("input[name='q3']:checked").val();
+      if(radioValue == "3")
+                
+                {
+                    $("#fifth").show();
+                    $("#fourth").hide();
+                    $("#progress").show();
+                    $("#progressBar").css("width","40%");
+                    $("#progressText").html("LEVEL FOUR (40%)");
+                 }
+            
+            else if(radioValue == "2")
+                 {  
+                    $("#errorMsg2").show();
+                    $("#q3Error").html("* Sorry! Its not correct");
+                     return false;
+
+                 }
+            else if(radioValue == "1")
+                 {  
+                    $("#errorMsg2").show();
+                    $("#q3Error").html("*  we appreciate your efforts but it's still not correct");
+                     return false;
+                  }   
+            else 
+                 {
+                    $("#errorMsg2").show();
+                    $("#q3Error").html("* Please select an option");
+                     return false;
+                 }
+                 
+      });
+ //========================validation of LEVEL THREE of the form ENDS=======================
+
+
+
+
+
+ //========================validation of LEVEL FOURTH of the form sTARTS=======================
+
+
+$("#next-5").click(function(e)
+{   
+       var radioValue = $("input[name='q4']:checked").val();
+      if(radioValue == "2")
+                
+                {
+                    $("#sixth").show();
+                    $("#fifth").hide();
+                    $("#progress").show();
+                    $("#progressBar").css("width","50%");
+                    $("#progressText").html("LEVEL FIVE (50%)");
+                 }
+            
+            else if(radioValue == "1")
+                 {
+                    $("#errorMsg3").show();
+                    $("#q4Error").html("* Sorry! Its not correct");
+                     return false;
+
+                 }
+            
+            else 
+                 {
+                    $("#errorMsg3").show();
+                    $("#q4Error").html("* Please select an option");
+                     return false;
+                 }
+                 
+      });
+
+ //========================validation of LEVEL FOURTH of the form ENDS=======================
+
+
+//========================validation of LEVEL FIFTH of the form sTARTS=======================
+
+
+$("#next-6").click(function()
+{   
+       var radioValue = $("input[name='q5']:checked").val();
+      if(radioValue == "1")
+                
+                {
+                    $("#seventh").show();
+                    $("#sixth").hide();
+                    $("#progress").show();
+                    $("#progressBar").css("width","60%");
+                    $("#progressText").html("LEVEL SIX (60%)");
+                 }
+            
+            else if(radioValue == "2")
+                 {
+                    $("#errorMsg4").show();
+                    $("#q5Error").html("* Sorry! Its not correct");
+                     return false;
+
+                 }
+            
+            else 
+                 {
+                    $("#errorMsg4").show();
+                    $("#q5Error").html("* Please select an option");
+                     return false;
+                 }
+                 
+      });
+
+
+ //========================validation of LEVEL FIFTH of the form ENDS=======================
+
+
+
+ //========================validation of LEVEL SIXTH of the form sTARTS=======================
+
+
+$("#next-7").click(function()
+{   
+       var radioValue = $("input[name='q6']:checked").val();
+      if(radioValue == "1")
+                
+                {
+                    $("#eighth").show();
+                    $("#seventh").hide();
+                    $("#progress").show();
+                    $("#progressBar").css("width","70%");
+                    $("#progressText").html("LEVEL SEVEN (70%)");
+                 }
+            
+            else if(radioValue == "2")
+                 {
+                    $("#errorMsg5").show();
+                    $("#q6Error").html("* Do you how much dangerous it is ?");
+                     return false;
+
+                 }
+            
+            else 
+                 {
+                    $("#errorMsg5").show();
+                    $("#q6Error").html("* Please select an option");
+                     return false;
+                 }
+                 
+      });
+
+
+ //========================validation of LEVEL SIXTH of the form ENDS=======================
+
+
+ //========================validation of LEVEL sevnth of the form sTARTS=======================
+
+
+$("#next-8").click(function()
+{   
+       var radioValue = $("input[name='q7']:checked").val();
+      if(radioValue == "3")
+                
+                {
+                    $("#nineth").show();
+                    $("#eighth").hide();
+                    $("#progress").show();
+                    $("#progressBar").css("width","80%");
+                    $("#progressText").html("LEVEL EIGHT (80%)");
+                 }
+            
+            else if(radioValue == "2")
+                 {
+                    $("#errorMsg6").show();
+                    $("#q7Error").html("* This is not correct");
+                     return false;
+
+                 }
+
+                 else if(radioValue == "1")
+                 {
+                    $("#errorMsg6").show();
+                    $("#q7Error").html("* This is also not correct");
+                     return false;
+
+                 }
+            
+            else 
+                 {
+                    $("#errorMsg6").show();
+                    $("#q7Error").html("* Please select an option");
+                     return false;
+                 }
+                 
+      });
+
+
+ //========================validation of LEVEL sevenTH of the form ENDS=======================
+
+
+
+
+ //========================validation of LEVEL eighth of the form sTARTS=======================
+
+
+$("#next-9").click(function()
+{   
+       var radioValue = $("input[name='q8']:checked").val();
+      if(radioValue == "2")
+                
+                {
+                    $("#tenth").show();
+                    $("#nineth").hide();
+                    $("#progress").show();
+                    $("#progressBar").css("width","90%");
+                    $("#progressText").html("LEVEL NINE (90%)");
+                 }
+            
+            else if(radioValue == "1")
+                 {
+                    $("#errorMsg7").show();
+                    $("#q8Error").html("* This is not correct");
+                     return false;
+
+                 }
+
+                 else if(radioValue == "3")
+                 {
+                    $("#errorMsg7").show();
+                    $("#q8Error").html("* This is also not correct");
+                     return false;
+
+                 }
+            
+            else 
+                 {
+                    $("#errorMsg7").show();
+                    $("#q8Error").html("* Please select an option");
+                     return false;
+                 }
+                 
+      });
+
+
+ //========================validation of LEVEL eighth of the form ENDS=======================
+
+ //========================validation of LEVEL nineth of the form sTARTS=======================
+
+
+$("#next-10").click(function()
+{   
+       var radioValue = $("input[name='q9']:checked").val();
+      if(radioValue == "2")
+                
+                {
+                    $("#eleventh1").show();
+                    $("#tenth").hide();
+                    $("#progress").show();
+                    $("#progressBar").css("width","100%");
+                    $("#progressText").html("LEVEL TEN (100%)");
+                    
+                 }
+            
+            else if(radioValue == "1")
+                 {
+                    $("#errorMsg8").show();
+                    $("#q9Error").html("* This is not correct");
+                     return false;
+
+                 }
+
+                 
+            else 
+                 {
+                    $("#errorMsg8").show();
+                    $("#q9Error").html("* Please select an option");
+                     return false;
+                 }
+                 
+      });
+
+
+ //========================validation of LEVEL nineth of the form ENDS=======================
+
+
+ 
+
+
+   //========================ALL PREVIOUS BUTTON=======================   
+    $("#prev-2").click(function(){
+        $("#second").hide();
+        $("#first").show();
+        $("#progress").show();
+        $("#progressBar").css("width","0%");
+        $("#progressText").html("");
+    });
+    $("#prev-3").click(function(){
+        $("#third").hide();
+        $("#second").show();
+        $("#progress").show();
+        $("#progressBar").css("width","10%");
+        $("#progressText").html("LEVEL-1 (10%)");
+    });
+
+     $("#prev-4").click(function(){
+        $("#fourth").hide();
+        $("#third").show();
+        $("#progress").show();
+        $("#progressBar").css("width","20%");
+        $("#progressText").html("LEVEL-TWO (20%)");
+    });
+
+     $("#prev-5").click(function(){
+        $("#fifth").hide();
+        $("#fourth").show();
+        $("#progress").show();
+        $("#progressBar").css("width","30%");
+        $("#progressText").html("LEVEL-THREE (30%)");
+    });
+
+     $("#prev-6").click(function(){
+        $("#sixth").hide();
+        $("#fifth").show();
+        $("#progress").show();
+        $("#progressBar").css("width","40%");
+        $("#progressText").html("LEVEL- FOUR (40%)");
+    });
+
+
+     $("#prev-7").click(function(){
+        $("#seventh").hide();
+        $("#sixth").show();
+        $("#progress").show();
+        $("#progressBar").css("width","50%");
+        $("#progressText").html("LEVEL- FIVE (50%)");
+    });
+
+
+     $("#prev-8").click(function(){
+        $("#eighth").hide();
+        $("#seventh").show();
+        $("#progress").show();
+        $("#progressBar").css("width","60%");
+        $("#progressText").html("LEVEL- SIX (60%)");
+    });
+
+
+     $("#prev-9").click(function(){
+        $("#nineth").hide();
+        $("#eighth").show();
+        $("#progress").show();
+        $("#progressBar").css("width","70%");
+        $("#progressText").html("LEVEL- SEVEN (70%)");
+    });
+
+
+     $("#prev-10").click(function(){
+        $("#tenth").hide();
+        $("nineth").show();
+        $("#progress").show();
+        $("#progressBar").css("width","80%");
+        $("#progressText").html("LEVEL- EIGHT (80%)");
+    });
+
+     $("#prev-11").click(function(){
+        
+        $("tenth").show();
+        $("#progress").show();
+        $("#progressBar").css("width","90%");
+        $("#progressText").html("LEVEL- NINE (90%)");
+    });
+});
+
+
+  </script>
+
+  </body>
+</html>
